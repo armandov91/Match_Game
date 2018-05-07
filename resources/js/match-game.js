@@ -9,8 +9,17 @@ var MatchGame = {};
   Generates and returns an array of matching card values.
  */
 
-MatchGame.generateCardValues = function () {
+ // Range for generating random values
+ var values_range = 8;
 
+MatchGame.generateCardValues = function () {
+  var values=[];
+  for(var i=0;i<8;i++){
+    values.push(i+1);
+    values.push(i+1);
+  }
+  values.sort(function(a, b){return 0.5 - Math.random()});
+  return values;
 };
 
 /*
