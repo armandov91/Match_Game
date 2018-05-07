@@ -32,7 +32,7 @@ MatchGame.generateCardValues = function () {
 */
 
 MatchGame.renderCards = function(cardValues, $game) {
-  var $colors = ["hsl(25,85%,65%)","hsl(25,85%,65%)","hsl(55,85%,65%)","hsl(90,85%,65%)","hsl(160,85%,65%)","hsl(220,85%,65%)","hsl(265,85%,65%)","hsl(310,85%,65%)","hsl(360,85%,65%)"];
+  var $colors = ["hsl(25,85%,65%)","hsl(55,85%,65%)","hsl(90,85%,65%)","hsl(160,85%,65%)","hsl(220,85%,65%)","hsl(265,85%,65%)","hsl(310,85%,65%)","hsl(360,85%,65%)"];
   $game.empty();
   $game.data("flipped_cards",[]);
   for(var i=0;i<cardValues.length;i++){
