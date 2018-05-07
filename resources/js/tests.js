@@ -88,6 +88,7 @@ MatchGameTests.testFlipCard = function(errors) {
   var $card1 = $($cards.get(1));
   var $card2 = $($cards.get(2));
   var faceDownColor = $card0.css('background-color');
+  console.log($card0);
 
   if (!$cards.length) {
     errors.push("flipCard: Game should have '.card' objects to flip.");
